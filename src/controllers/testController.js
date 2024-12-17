@@ -1,11 +1,11 @@
-const testService = require('../services/testService')
+//const testService = require('../services/testService')
 
 async function pingRequest(req,res) {
      
     console.log(this.testService);
     
 
-    const response = await testService.pingCheck()
+    const response = await this.testService.pingCheck()
     return res.send({data: response})
 }
 

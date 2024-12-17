@@ -1,7 +1,10 @@
-async function pingCheck() {
-    return 'pong'
+class TestService {
+    constructor () {
+        // inject here
+    } 
+    async pingCheck() {
+        return 'pong'
+    }
 }
 
-module.exports = {
-    pingCheck
-}
+module.exports =  TestService

@@ -9,7 +9,7 @@ async function app(fastify,options) {
     fastify.register(servicePlugin)
 
     // register test routes 
-    fastify.register(require('./routes/testRoutes'), { prefix: '/test' });
+    fastify.register(require('./routes/api/apiRoutes'), { prefix: '/api' });
 }
 
 
